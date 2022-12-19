@@ -1,17 +1,20 @@
-import {Provider} from 'react-redux'
-import {View, Text} from 'react-native'
-import store from './store'
-import {RouterView} from './src/index'
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-/* <Provider store={store}>  </Provider> redux를 사용하기위해 Provider로 감싸줘야한다. */
-/* <CountScreen></CountScreen>   실습할 Screen */
   return (
-    <View>
-      <Text>ㅎㄷㅎㄷ</Text>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
     </View>
-    // <Provider store={store}>  
-    //     <RouterView/>
-    //   </Provider>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
