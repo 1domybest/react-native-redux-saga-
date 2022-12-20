@@ -1,17 +1,24 @@
 import {USER_ACTION_TYPE} from './actionTypes'
 
 
+// const logInRequest = (payload) => { // async action creator 비동기 액션
+//     return (dispatch, getState) => { // 비동기 액션
+//         dispatch(loading);
+//         try {
+//             setTimeout(function () {
+//                 dispatch(logInSuccess(payload));
+//             }, 2000)
+//         } catch (e) {
+//             dispatch(logInFailure)
+//         }
+//     };
+// }
+
 const logInRequest = (payload) => { // async action creator 비동기 액션
-    return (dispatch, getState) => { // 비동기 액션
-        dispatch(loading);
-        try {
-            setTimeout(function () {
-                dispatch(logInSuccess(payload));
-            }, 2000)
-        } catch (e) {
-            dispatch(logInFailure)
-        }
-    };
+    return {
+        type: USER_ACTION_TYPE.USER_LOG_IN_REQUEST,
+        payload
+    }
 }
 
 const loading = () => {

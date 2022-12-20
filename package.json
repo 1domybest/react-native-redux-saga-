@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
+    "axios": "^1.2.1",
     "expo": "~47.0.8",
     "expo-status-bar": "~1.4.2",
     "immer": "^9.0.16",
@@ -20,6 +21,7 @@
     "react-redux": "^8.0.5",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
+    "redux-saga": "^1.2.2",
     "redux-thunk": "^2.4.2"
   },
   "devDependencies": {

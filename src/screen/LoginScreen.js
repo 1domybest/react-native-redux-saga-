@@ -5,6 +5,7 @@ import {logInRequest, logOutRequest} from "../actions/userAction";
 const LoginScreen = () => {
     const dispatch = useDispatch();
     const user = useSelector(state => state.userReducer);
+    console.log(user)
     //  state.userReducer
     // state 는 전체 이니셜스테이트 데이터
     // state.userReducer = ../reducers/rootReducer 안에  userReducer << 이친구를 가르키고있다. : userReducer,
