@@ -7,57 +7,6 @@ const initialState = {
     userList: []
 }
 
-
-
-// const userReducer = (state = initialState, action) => {
-//     return produce(state, (draft) => {
-//         const {type, payload} = action;
-//         switch (type) {
-//             case USER_ACTION_TYPE.USER_LOADING:
-//                 return {
-//                     ...state,
-//                     loading: true
-//                 }
-//             case USER_ACTION_TYPE.USER_LOG_IN_REQUEST:
-//                 return {
-//                     ...state,
-//                     loading: true
-//                 }
-//             case USER_ACTION_TYPE.USER_LOG_IN_SUCCESS:
-//                 return {
-//                     ...state,
-//                     loading: false,
-//                     user: payload
-//                 }
-//             case USER_ACTION_TYPE.USER_LOG_IN_FAILURE:
-//                 return {
-//                     ...state,
-//                     loading: false
-//                 }
-//             case USER_ACTION_TYPE.USER_LOG_OUT_REQUEST:
-//                 return {
-//                     ...state,
-//                     loading: true
-//                 }
-//             case USER_ACTION_TYPE.USER_LOG_OUT_SUCCESS:
-//                 return {
-//                     ...state,
-//                     loading: false,
-//                     user: null,
-//                 }
-//             case USER_ACTION_TYPE.USER_LOG_OUT_FAILURE:
-//                 return {
-//                     ...state,
-//                     loading: false,
-//                 }
-//             default:
-//                 return state
-//         }
-//     })
-// }
-
-
-
 // immer 기본 형태
 // nextState = produce(prevState, (draft) => {})
 
